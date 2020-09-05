@@ -1,0 +1,1 @@
+bprecordList: SELECT * FROM recordbp ;
