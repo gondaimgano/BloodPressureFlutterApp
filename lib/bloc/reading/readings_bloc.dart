@@ -1,25 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:bpapp/db/dbase.dart';
+part 'readings_state.dart';
 
-abstract class ReadingsState extends Equatable {
-  @override
-  List<Object> get props => [];
-}
-
-class ReadingsLoading extends ReadingsState {}
-
-class ReadingsSuccess extends ReadingsState {
-  final List<BloodPressureReading> records;
-
-  ReadingsSuccess([this.records]);
-}
-
-class ReadingsError extends ReadingsState {
-  final String message;
-
-  ReadingsError(this.message);
-}
 
 class ReadingsBloc extends Cubit<ReadingsState> {
   List<BloodPressureReading> _records;

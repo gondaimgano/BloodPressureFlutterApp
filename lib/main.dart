@@ -1,4 +1,4 @@
-import 'package:bpapp/bloc/readings_bloc.dart';
+import 'package:bpapp/bloc/reading/readings_bloc.dart';
 import 'package:bpapp/db/dbase.dart';
 import 'package:bpapp/screen/reading_list.dart';
 import 'package:flutter/material.dart';
